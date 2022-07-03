@@ -1,12 +1,12 @@
 package com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList
 
-class LinkedList<T> : Iterable<T> {
+class LinkedList<T> : Iterable<T>, Collection<T> {
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
-    var size = 0
+    override var size = 0
         private set
 
-    private fun isEmpty(): Boolean = size == 0
+    override fun isEmpty(): Boolean = size == 0
 
     override fun toString(): String = if (isEmpty())
         "Empty List"
@@ -114,6 +114,19 @@ class LinkedList<T> : Iterable<T> {
 
     override fun iterator(): Iterator<T> {
         return LinkedListIterator(this)
+    }
+
+    override fun contains(element: T): Boolean {
+        for (item in this)
+            if (item == element)
+                return true
+        return false
+    }
+
+    override fun containsAll(elements: Collection<T>): Boolean {
+        for (searched in elements)
+            if (!contains(searched)) return false
+        return true
     }
 }
 
