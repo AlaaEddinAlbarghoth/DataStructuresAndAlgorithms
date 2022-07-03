@@ -59,6 +59,13 @@ class MainActivity : ComponentActivity() {
                     val removedValue = list.removeAfter(node)
                     println("After removing at index $index: $list")
                     println("Removed value: $removedValue")*/
+
+                    /* Regular for loop on our LinkedList via Iterator
+                    * println(list)
+                    for (item in list) {
+                        println("Double: ${item * 2}")
+                    }
+                    * */
                 }
             }
         }

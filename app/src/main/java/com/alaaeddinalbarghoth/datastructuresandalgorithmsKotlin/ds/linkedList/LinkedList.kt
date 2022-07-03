@@ -1,9 +1,10 @@
 package com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList
 
-class LinkedList<T> {
+class LinkedList<T> : Iterable<T> {
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
-    private var size = 0
+    var size = 0
+        private set
 
     private fun isEmpty(): Boolean = size == 0
 
@@ -110,6 +111,10 @@ class LinkedList<T> {
         return result
     }
     /* endregion */
+
+    override fun iterator(): Iterator<T> {
+        return LinkedListIterator(this)
+    }
 }
 
 /* Push
