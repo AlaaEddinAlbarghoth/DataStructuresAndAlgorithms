@@ -8,6 +8,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.printReverse
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
 import logcat.LogPriority
 import logcat.logcat
@@ -24,6 +25,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
+                    /* region LinkedList */
+
                     /* List
                     val list = LinkedList<Int>()
                     list.push(3).push(2).push(1)*/
@@ -68,6 +71,7 @@ class MainActivity : ComponentActivity() {
                     }
                     * */
 
+                    /* region remove/retainAll/removeAll
                     val list: MutableCollection<Int> = LinkedList()
                     list.add(3)
                     list.add(2)
@@ -86,7 +90,19 @@ class MainActivity : ComponentActivity() {
 
                     println(list)
                     list.removeAll(listOf(3, 4, 5))
+                    println(list)*/
+
+                    /* region Reverse Stack
+                    val list = LinkedList<Int>()
+                    list.add(3)
+                    list.add(2)
+                    list.add(1)
+                    list.add(4)
+                    list.add(5)
                     println(list)
+                    println()
+                    list.printReverse()*/
+                    /* endregion */
                 }
             }
         }

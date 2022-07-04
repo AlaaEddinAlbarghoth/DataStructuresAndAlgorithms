@@ -179,6 +179,10 @@ class LinkedList<T> : Iterable<T>, Collection<T>, MutableIterable<T>, MutableCol
     }
 }
 
+fun <T> LinkedList<T>.printReverse() {
+    this.nodeAt(0)?.printReverse()
+}
+
 /* Push
 val list = LinkedList<Int>()
 list.push(3).push(2).push(1)*/
