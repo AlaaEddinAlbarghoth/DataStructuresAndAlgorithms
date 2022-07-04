@@ -24,8 +24,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
+                    /* List
                     val list = LinkedList<Int>()
-                    list.push(3).push(2).push(1)
+                    list.push(3).push(2).push(1)*/
 
                     /* Append
                     list.append(3).append(2).append(1)
@@ -66,6 +67,26 @@ class MainActivity : ComponentActivity() {
                         println("Double: ${item * 2}")
                     }
                     * */
+
+                    val list: MutableCollection<Int> = LinkedList()
+                    list.add(3)
+                    list.add(2)
+                    list.add(1)
+                    list.add(4)
+                    list.add(5)
+                    list.add(5)
+
+                    println(list)
+                    list.remove(1)
+                    println(list)
+
+                    println(list)
+                    list.retainAll(listOf(3, 4, 5))
+                    println(list)
+
+                    println(list)
+                    list.removeAll(listOf(3, 4, 5))
+                    println(list)
                 }
             }
         }
