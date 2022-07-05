@@ -183,6 +183,23 @@ fun <T> LinkedList<T>.printReverse() {
     this.nodeAt(0)?.printReverse()
 }
 
+/* Runner technique */
+fun <T> LinkedList<T>.getMiddle(): Node<T>? {
+    var fast = this.nodeAt(0)
+    var slow = this.nodeAt(0)
+
+    while (fast != null) {
+        fast = fast.next
+
+        if (fast != null) {
+            fast = fast.next
+            slow = slow?.next
+        }
+    }
+
+    return slow
+}
+
 /* Push
 val list = LinkedList<Int>()
 list.push(3).push(2).push(1)*/

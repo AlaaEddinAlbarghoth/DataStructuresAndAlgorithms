@@ -8,10 +8,8 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.printReverse
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.getMiddle
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
-import logcat.LogPriority
-import logcat.logcat
 
 class MainActivity : ComponentActivity() {
 
@@ -102,6 +100,17 @@ class MainActivity : ComponentActivity() {
                     println(list)
                     println()
                     list.printReverse()*/
+                    /* endregion */
+
+                    /* region The item in the middle */
+                    val list = LinkedList<Int>()
+                    list.add(3)
+                    list.add(2)
+                    list.add(1)
+                    list.add(4)
+                    list.add(5)
+                    println(list)
+                    println(list.getMiddle()?.value)
                     /* endregion */
                 }
             }
