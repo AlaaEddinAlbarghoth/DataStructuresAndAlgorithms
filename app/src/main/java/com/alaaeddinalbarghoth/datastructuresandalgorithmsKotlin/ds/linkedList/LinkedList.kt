@@ -1,5 +1,8 @@
 package com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList
 
+import logcat.LogPriority
+import logcat.logcat
+
 class LinkedList<T> : Iterable<T>, Collection<T>, MutableIterable<T>, MutableCollection<T> {
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
@@ -198,6 +201,22 @@ fun <T> LinkedList<T>.getMiddle(): Node<T>? {
     }
 
     return slow
+}
+
+/* Reverse LinkedList */
+private fun <T> addInReverse(list: LinkedList<T>, node: Node<T>) {
+    val next = node.next
+    if (next != null)
+        addInReverse(list, next)
+    list.append(node.value)
+}
+
+fun <T> LinkedList<T>.reversed(): LinkedList<T> {
+    val result = LinkedList<T>()
+    val head = this.nodeAt(0)
+    if (head != null)
+        addInReverse(result, head)
+    return result
 }
 
 /* Push
