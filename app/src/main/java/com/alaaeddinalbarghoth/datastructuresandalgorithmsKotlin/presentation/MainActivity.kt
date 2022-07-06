@@ -9,6 +9,7 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.getMiddle
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.mergeSorted
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.reversed
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
 
@@ -114,15 +115,36 @@ class MainActivity : ComponentActivity() {
                     /* endregion */
 
                     /* region reversed */
-                    val list = LinkedList<Int>()
-                    list.add(3)
-                    list.add(2)
-                    list.add(1)
-                    list.add(4)
-                    list.add(5)
-                    println("Original: $list")
-                    println("Reversed: ${list.reversed()}")
+//                    val list = LinkedList<Int>()
+//                    list.add(3)
+//                    list.add(2)
+//                    list.add(1)
+//                    list.add(4)
+//                    list.add(5)
+//                    println("Original: $list")
+//                    println("Reversed: ${list.reversed()}")
                     /* endregion */
+
+                    /* region Merging two linked lists */
+//                    val list = LinkedList<Int>()
+//                    list.add(1)
+//                    list.add(2)
+//                    list.add(3)
+//                    list.add(4)
+//                    list.add(5)
+//
+//                    val other = LinkedList<Int>()
+//                    other.add(-1)
+//                    other.add(0)
+//                    other.add(2)
+//                    other.add(2)
+//                    other.add(7)
+//
+//                    println("Left: $list")
+//                    println("Right: $other")
+//                    println("Merged: ${list.mergeSorted(other)}")
+                    /* endregion */
+
                     /* endregion */
                 }
             }
