@@ -7,10 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.getMiddle
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.mergeSorted
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.reversed
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.StackImpl
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.stackOf
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
 
 class MainActivity : ComponentActivity() {
@@ -145,6 +143,31 @@ class MainActivity : ComponentActivity() {
 //                    println("Merged: ${list.mergeSorted(other)}")
                     /* endregion */
 
+                    /* endregion */
+
+                    /* region Stack */
+//                    val stack1 = StackImpl<Int>().apply {
+//                        push(1)
+//                        push(2)
+//                        push(3)
+//                        push(4)
+//                    }
+//                    print(stack1)
+//
+//                    val poppedElement = stack1.pop()
+//                    if (poppedElement != null)
+//                        println("Popped: $poppedElement")
+//                    print(stack1)
+//
+//                    val list = listOf("A", "B", "C", "D")
+//                    val stack2 = StackImpl.create<String>(list)
+//                    print(stack2)
+//                    println("Popped: ${stack2.pop()}")
+//
+//                    val stack = stackOf(1.0, 2.0, 3.0, 4.0)
+//                    print(stack)
+//                    println("Popped: ${stack.pop()}")
+//                    print(stack)
                     /* endregion */
                 }
             }
