@@ -1,6 +1,7 @@
-package com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack
+package com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.challanges
 
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.StackImpl
 
 fun <T> LinkedList<T>.printInReverse() {
     val stack = StackImpl<T>()

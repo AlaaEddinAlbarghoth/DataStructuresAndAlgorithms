@@ -7,8 +7,6 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.printInReverse
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
 
 class MainActivity : ComponentActivity() {
@@ -172,7 +170,7 @@ class MainActivity : ComponentActivity() {
 
 
                     /* region Reverse Stack*/
-                    val list = LinkedList<Int>()
+                    /*val list = LinkedList<Int>()
                     list.add(3)
                     list.add(2)
                     list.add(1)
@@ -181,7 +179,7 @@ class MainActivity : ComponentActivity() {
                     println(list)
                     println()
                     list.printInReverse()
-                    println()
+                    println()*/
                     /* endregion */
 
                     /* endregion */
