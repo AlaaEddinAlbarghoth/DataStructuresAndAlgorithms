@@ -7,8 +7,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.StackImpl
-import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.stackOf
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList.LinkedList
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.printInReverse
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
 
 class MainActivity : ComponentActivity() {
@@ -90,16 +90,17 @@ class MainActivity : ComponentActivity() {
                     list.removeAll(listOf(3, 4, 5))
                     println(list)*/
 
-                    /* region Reverse Stack
-                    val list = LinkedList<Int>()
-                    list.add(3)
-                    list.add(2)
-                    list.add(1)
-                    list.add(4)
-                    list.add(5)
-                    println(list)
-                    println()
-                    list.printReverse()*/
+                    /* region Reverse */
+                    /*  val list = LinkedList<Int>()
+                      list.add(3)
+                      list.add(2)
+                      list.add(1)
+                      list.add(4)
+                      list.add(5)
+                      println(list)
+                      println()
+                      list.printReverse()*/
+                    /* endregion */
 
                     /* region The item in the middle */
 //                    val list = LinkedList<Int>()
@@ -168,6 +169,21 @@ class MainActivity : ComponentActivity() {
 //                    print(stack)
 //                    println("Popped: ${stack.pop()}")
 //                    print(stack)
+
+
+                    /* region Reverse Stack*/
+                    val list = LinkedList<Int>()
+                    list.add(3)
+                    list.add(2)
+                    list.add(1)
+                    list.add(4)
+                    list.add(5)
+                    println(list)
+                    println()
+                    list.printInReverse()
+                    println()
+                    /* endregion */
+
                     /* endregion */
                 }
             }

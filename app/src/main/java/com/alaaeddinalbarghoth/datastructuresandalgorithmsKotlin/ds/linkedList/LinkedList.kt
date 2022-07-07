@@ -1,8 +1,5 @@
 package com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.linkedList
 
-import logcat.LogPriority
-import logcat.logcat
-
 class LinkedList<T> : Iterable<T>, Collection<T>, MutableIterable<T>, MutableCollection<T> {
     private var head: Node<T>? = null
     private var tail: Node<T>? = null
@@ -219,7 +216,7 @@ fun <T> LinkedList<T>.reversed(): LinkedList<T> {
     return result
 }
 
-
+/* region MergeSorted */
 fun <T : Comparable<T>> LinkedList<T>.mergeSorted(otherList: LinkedList<T>): LinkedList<T> {
     if (this.isEmpty()) return otherList
     if (otherList.isEmpty()) return this
@@ -251,7 +248,7 @@ fun <T : Comparable<T>> append(result: LinkedList<T>, node: Node<T>): Node<T>? {
     result.append(node.value)
     return node.next
 }
-
+/* endregion */
 
 /* Push
 val list = LinkedList<Int>()
