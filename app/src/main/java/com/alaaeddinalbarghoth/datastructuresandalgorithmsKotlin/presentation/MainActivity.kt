@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.ds.stack.challanges.checkParentheses
 import com.alaaeddinalbarghoth.datastructuresandalgorithmsKotlin.presentation.theme.DataStructuresAndAlgorithmsTheme
 
 class MainActivity : ComponentActivity() {
@@ -180,6 +181,29 @@ class MainActivity : ComponentActivity() {
                     println()
                     list.printInReverse()
                     println()*/
+                    /* endregion */
+
+                    /* region checkParentheses */
+                    val str1 = "((()))"
+                    val str2 = "((())))))"
+                    val str3 = "(((((((((())))))"
+
+                    if (str1.checkParentheses())
+                        println("$str1 Passed")
+                    else
+                        println("$str1 Failed")
+
+                    if (str2.checkParentheses())
+                        println("$str2 Passed")
+                    else
+                        println("$str2 Failed")
+
+                    if (str3.checkParentheses())
+                        println("$str3 Passed")
+                    else
+                        println("$str3 Failed")
+
+
                     /* endregion */
 
                     /* endregion */
